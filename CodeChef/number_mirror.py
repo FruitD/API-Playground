@@ -1,11 +1,11 @@
 error_string = 'out of bounds or not an integer'
 
-while True:
-    try:
-        entry = int(input(''))
-        break
-    except ValueError:
-        print(error_string)
+# while True:
+#     try:
+#         entry = int(input(''))
+#         break
+#     except ValueError:
+#         print(error_string)
 
 
 def output_what_is_inputted(entry):
@@ -14,6 +14,3 @@ def output_what_is_inputted(entry):
 
     else:
         print(entry)
-
-
-output_what_is_inputted(entry)

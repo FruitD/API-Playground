@@ -1,14 +1,17 @@
 import cassiopeia as cass
-from dotenv import load_dotenv
+from cassiopeia import Summoner
 
-api_key = 'RGAPI-cf6ca1c5-e5d3-4e03-93a1-1ac1fa30f4fe'
+temp_name = "FruitDDisco"
 
-cass.set_riot_api_key(api_key)
 
-summoner = cass.get_summoner(name="FruitDDisco", region="NA")
+def get_summoner_data_by_name(api_key, region, name):
+    cass.set_riot_api_key(api_key)
 
-items = cass.get_items(region="NA")
-for item in items:
-    print(item.name)
+    summoner = cass.get_summoner(name=name, region=region)
 
-# def list_all_items():
+    print(summoner.account_id)
+    # items = cass.get_items(region)
+    # for item in items:
+    #     print(item.name)
+
+    # def list_all_items():
