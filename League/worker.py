@@ -1,4 +1,5 @@
 import cassiopeia as cass
+from dotenv import load_dotenv
 
 api_key = 'RGAPI-cf6ca1c5-e5d3-4e03-93a1-1ac1fa30f4fe'
 
