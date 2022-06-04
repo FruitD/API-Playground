@@ -1,6 +1,5 @@
 error_string = 'out of bounds or not an integer'
 
-
 while True:
     try:
         entry = int(input(''))

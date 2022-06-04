@@ -1,8 +1,9 @@
-from CodeChef.code_chef_challenge_holder import output_what_is_inputted
-
+from CodeChef.find_remainder import get_division_remainder
+from CodeChef.number_mirror import output_what_is_inputted
+from League.worker import
 
 def run():
-    output_what_is_inputted(5)
+
 
 
 if __name__ == '__main__':
