@@ -1,20 +1,23 @@
 import os
 import sys
 
-from CodeChef.find_remainder import get_division_remainder
-from CodeChef.number_mirror import output_what_is_inputted
-from League.worker import get_summoner_data_by_name
+
 from dotenv import load_dotenv, find_dotenv
+
+from src.League.worker import print_champion_dict, get_all_item_names, get_match_history_data_by_summoner_name
 
 
 def run():
-    # load_dotenv()
-    path = sys.path[0] + '/config/.env'  # try .path[0] if 1 doesn't work
+    path = sys.path[0] + '/config/.env'
     load_dotenv(find_dotenv(path))
     api_key = os.getenv('API_KEY')
     temp_region = os.getenv('REGION')
     temp_name = 'FruitDDisco'
-    get_summoner_data_by_name(api_key, temp_region, temp_name)
+
+    # get_match_history_data_by_summoner_name(api_key, temp_region, temp_name)
+    # get_all_item_names(api_key, temp_region)
+    # print_champion_dict(api_key, temp_region)
+    print_champion_dict(api_key, temp_region)
 
 
 if __name__ == '__main__':
