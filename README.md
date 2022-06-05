@@ -1,8 +1,10 @@
-# API-Playground
-This is a project meant to hold various python work and adventures.
+# StinkRat
+StinkRat is a bot in early development that is broadly intended to integrate a user's Discord and League of Legends experience. 
 
-In particular, I want to explore the Riot Developer API and its ability to integrate with the Discord API and Overwolf.
+*Phase 1: Initially I plan to integrate the APIs by creating a Discord bot (using the discord.py library) that will display simple League of Legends data to the user through the Discord application (ex. Summoner champion prefernce).
 
-As an initial use case, I want BradBot to message me in Discord what champion I should play based on win % of champions inputted 
+*Phase 2: Apply logic to 
 
-(Eventually integrating Overwolf to change the input from manual to opponent's champion)
+*Phase 3: Implement interaction with the League Client API to obtain real time data, such as match-up information determinded by the .
+
+The project description is a rough draft and will change with important development decisions.
